@@ -1,0 +1,79 @@
+{
+    "AzureADObjects": {
+		"SecurityGroups" : 
+		{
+			"InternalEnvs":
+			[
+				{
+					"DisplayName": "GroupA",
+					"MailNickName": "GroupA" ,
+					"Description": "Whatever ",
+					"DefaultMembers": ""
+				},
+				{
+					"DisplayName": "GroupB",
+					"MailNickName": "GroupB" ,
+					"Description": "",
+					"DefaultMembers": "Admin,Scheduler,AccountsAPI,AuditService,"
+				},
+				{
+					"DisplayName": "LocalAdmins",
+					"MailNickName": "" ,
+					"Description": "Added users will have local admin access to all VMs via RPD",
+					"DefaultMembers": "admin, GroupA,GroupB"
+				}
+			]
+		},
+		"Users" : 
+		{
+			"InternalEnvs":
+			[
+				{
+					"DisplayName": "AdminA",
+					"MailNickName": "Admin" ,
+					"UserPrincipalName": "Admin@childdomain.onmicrosoft.com",
+					"JobTitle": " Internal Delivery Service Account",
+					"KeyVaultUserType": "Admin",
+					"UserType": "Member",
+					"AzureADRoles": "CRM Service Administrator"
+				},
+				{
+					"DisplayName": "AdminB",
+					"MailNickName": "Admin" ,
+					"UserPrincipalName": "Admin@childdomain.onmicrosoft.com",
+					"JobTitle": " Internal Delivery Service Account",
+					"KeyVaultUserType": "Admin",
+					"UserType": "Member",
+					"AzureADRoles": "CRM Service Administrator"
+				},
+				{
+					"DisplayName": "MSA1",
+					"MailNickName": "MSA1" ,
+					"UserPrincipalName": "MSA1@childdomain.onmicrosoft.com",
+					"JobTitle": "MSA1 Internal Delivery Service Account",
+					"KeyVaultUserType": "MSA1",
+					"UserType": "Member",
+					"AzureADRoles": "CRM Service Administrator"
+				},
+				{
+					"DisplayName": "MSA2",
+					"MailNickName": "MSA2" ,
+					"UserPrincipalName": "MSA2@childdomain.onmicrosoft.com",
+					"JobTitle": "Service Internal Delivery MSA2 Account",
+					"KeyVaultUserType": "MSA2",
+					"UserType": "Member",
+					"AzureADRoles": "CRM Service Administrator"
+				},
+				{
+					"DisplayName": "MSA3",
+					"MailNickName": "MSA3" ,
+					"UserPrincipalName": "AuditService@childdomain.onmicrosoft.com",
+					"JobTitle": "MSA3 Internal Delivery Service Account",
+					"KeyVaultUserType": "MSA3",
+					"UserType": "Member",
+					"AzureADRoles": "CRM Service Administrator"
+				}
+			]
+		}
+	}
+}
